@@ -57,19 +57,19 @@ class Deposit extends Transaction {
 
 const myAccount = new Account ('Snow-Patrol');
 console.log('Starting Balace: ', myAccount.balance);
-console.log('Attepming to withdraw even $1 should fail...');
-const t1 = new Withdrawal(1, myAccount);
-console.log('commit result: ',t1.commit());
-console.log('Account balance: ', myAccount.balance);
+// console.log('Attepming to withdraw even $1 should fail...');
+// const t1 = new Withdrawal(1, myAccount);
+// console.log('commit result: ',t1.commit());
+// console.log('Account balance: ', myAccount.balance);
 
 console.log('Depositing should succeed...');
 const t2 = new Deposit(9.99, myAccount);
-console.log('commit result: ',t2.commit());
+// console.log('commit result: ',t2.commit());
 console.log('Account balance: ', myAccount.balance);
 
-console.log('Attepming to withdraw $9.99 should pass...');
-const t3 = new Withdrawal(9.99, myAccount);
-console.log('commit result: ',t3.commit());
+// console.log('Attepming to withdraw $9.99 should pass...');
+// const t3 = new Withdrawal(9.99, myAccount);
+// console.log('commit result: ',t3.commit());
 
 console.log('Ending Account balance: ', myAccount.balance);
 
